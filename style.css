@@ -86,15 +86,9 @@ main {
   border-bottom: 1px solid #eee;
 }
 .profile-image figure {
-  height: 296px;
+  max-height: 296px;
   overflow: hidden;
   position: relative;
-}
-.profile-image img {
-  height: 100%;
-  aspect-ratio: 2/1;
-  object-fit: cover;
-  object-position: 0 70%;
 }
 h1 {
   position: absolute;
@@ -207,7 +201,7 @@ h1 {
   margin-left: 8px;
   color: var(--fbc-blue-70);
 }
-.work-details li i::before
+.work-details li i::before,
 .education-details li i::before {
   font-size: 16px;
   color: var(--fbc-blue-70);
@@ -222,4 +216,37 @@ h1 {
 .summary {
   margin: 10px 0;
   color: #000;
+}
+/* Footer Style */
+footer {
+  background-color: var(--fbc-blue-70);
+  text-align: center;
+  padding: 8px 0;
+}
+footer p {
+  margin: 10px 0;
+}
+footer p a {
+  border-bottom: 1px solid ;
+}
+footer p,
+footer a {
+  color: #fff;  
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer ul li {
+  margin-left: 4px;
+}
+footer ul li:first-child {
+  margin-left: 0;
+}
+footer li a:hover {
+  opacity: .5;
+}
+footer li i::before {
+  font-size: 16px;
 }
