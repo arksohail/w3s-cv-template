@@ -108,7 +108,7 @@ h1 {
   display: inline-block;
   vertical-align: middle;
   margin-right: 8px;
-  color: var(--fbc-blue-70);
+  color: #009688;
   font-size: 18px;
 }
 /* Skills Section Style */
@@ -125,7 +125,7 @@ h1 {
 .skills h2 i::before,
 .language h2 i::before {
   font-size: 18px;
-  color: var(--fbc-blue-70);
+  color: #009688;
 }
 .skills h2 i,
 .language h2 i {
@@ -149,7 +149,7 @@ h1 {
   text-align: center;
   font-size: 12px;
   color: #fff;
-  background-color: var(--fbc-blue-70);
+  background-color: #009688;
   border-radius: 16px;
 }
 /* Work and Academics Details Style */
@@ -178,7 +178,7 @@ h1 {
 .work-details h2 i::before,
 .education-details h2 i::before {
   font-size: 36px;
-  color: var(--fbc-blue-70);
+  color: #009688;
 }
 
 .work-details ul,
@@ -199,12 +199,13 @@ h1 {
   font-size: 16px;
   display: inline-block;
   margin-left: 8px;
-  color: var(--fbc-blue-70);
+  color: #009688;
+  vertical-align: middle;
 }
 .work-details li i::before,
 .education-details li i::before {
   font-size: 16px;
-  color: var(--fbc-blue-70);
+  color: #009688;
 }
 .work-details h3,
 .education-details h3 {
@@ -219,7 +220,7 @@ h1 {
 }
 /* Footer Style */
 footer {
-  background-color: var(--fbc-blue-70);
+  background-color: #009688;
   text-align: center;
   padding: 8px 0;
 }
@@ -227,11 +228,11 @@ footer p {
   margin: 10px 0;
 }
 footer p a {
-  border-bottom: 1px solid ;
+  border-bottom: 1px solid;
 }
 footer p,
 footer a {
-  color: #fff;  
+  color: #fff;
 }
 footer ul {
   display: flex;
@@ -245,8 +246,36 @@ footer ul li:first-child {
   margin-left: 0;
 }
 footer li a:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 footer li i::before {
   font-size: 16px;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    padding: 16px;
+  }
+  .personal-details {
+    margin: 0 auto;
+  }
+  .work-academics {
+    padding: 0;
+  }
+  .work-academics,
+  .personal-details {
+    width: 100%;
+  }
+  .profile-image figure {
+    max-height: 100%;
+    position: relative;
+  }
+  .profile-image img {
+    width: 100%;
+    height: auto;
+  }
+  .work-details,
+  .education-details {
+    margin: 16px 0;
+  }
 }
