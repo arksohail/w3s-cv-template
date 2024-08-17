@@ -73,7 +73,7 @@ main {
 }
 /* Personal Details Style */
 .personal-details {
-  width: 33.333%;
+  width: 32.5%;
   background-color: #fff;
   margin: 0 8px;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
@@ -157,4 +157,69 @@ h1 {
   color: #fff;
   background-color: var(--fbc-blue-70);
   border-radius: 16px;
+}
+/* Work and Academics Details Style */
+.work-academics {
+  width: 66.66%;
+  padding: 0 8px;
+}
+.work-details,
+.education-details {
+  padding: 10px 16px;
+  background-color: #fff;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.work-details h2,
+.education-details h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding: 16px 0;
+}
+.work-details h2 i,
+.education-details h2 i {
+  margin-right: 16px;
+}
+.work-details h2 i::before,
+.education-details h2 i::before {
+  font-size: 36px;
+  color: var(--fbc-blue-70);
+}
+
+.work-details ul,
+.education-details ul {
+  padding: 0 16px;
+}
+.work-details li,
+.education-details li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+.work-details li:last-child,
+.education-details li:last-child {
+  border-bottom: none;
+}
+.work-details li span,
+.education-details li span {
+  font-size: 16px;
+  display: inline-block;
+  margin-left: 8px;
+  color: var(--fbc-blue-70);
+}
+.work-details li i::before
+.education-details li i::before {
+  font-size: 16px;
+  color: var(--fbc-blue-70);
+}
+.work-details h3,
+.education-details h3 {
+  flex: 0 1 100%;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.summary {
+  margin: 10px 0;
+  color: #000;
 }
