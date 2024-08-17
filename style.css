@@ -20,6 +20,7 @@ html {
 /* min body height */
 body {
   min-height: 100vh;
+  color: #757575;
 }
 /* responsive images/videos */
 img,
@@ -37,7 +38,10 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+a,
+p,
+address {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   line-height: 1.5;
@@ -51,6 +55,106 @@ a {
 ul {
   list-style-type: none;
 }
-input, button, a {
+input,
+button,
+a {
   outline: none;
+}
+/* Main Style */
+main {
+  background-color: #f1f1f1;
+}
+/* Container Style */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  padding: 16px 8px;
+}
+/* Personal Details Style */
+.personal-details {
+  width: 33.333%;
+  background-color: #fff;
+  margin: 0 8px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.profile-image::after {
+  content: "";
+  display: block;
+  width: 92%;
+  margin: 0 auto;
+  border-bottom: 1px solid #eee;
+}
+.profile-image figure {
+  height: 296px;
+  overflow: hidden;
+  position: relative;
+}
+.profile-image img {
+  height: 100%;
+  aspect-ratio: 2/1;
+  object-fit: cover;
+  object-position: 0 70%;
+}
+h1 {
+  position: absolute;
+  left: 16px;
+  right: 0;
+  bottom: 16px;
+  z-index: 1;
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+}
+.profile-image li {
+  padding: 0 16px;
+  margin: 15px 0;
+}
+.profile-image li i::before {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  color: var(--fbc-blue-70);
+  font-size: 18px;
+}
+/* Skills Section Style */
+.skills,
+.language {
+  padding: 0 16px 22px 16px;
+}
+.skills h2,
+.language h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 18px 0;
+}
+.skills h2 i::before,
+.language h2 i::before {
+  font-size: 18px;
+  color: var(--fbc-blue-70);
+}
+.skills h2 i,
+.language h2 i {
+  margin-right: 16px;
+}
+.skill h3,
+.language h3 {
+  margin: 15px 0;
+}
+.progress-bar {
+  background-color: #f1f1f1;
+  border-radius: 16px;
+}
+.language .progress-bar,
+.language .progress-bar span {
+  height: 24px;
+}
+.progress-bar span {
+  display: block;
+  width: var(--percentage);
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  background-color: var(--fbc-blue-70);
+  border-radius: 16px;
 }
